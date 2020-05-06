@@ -1,0 +1,20 @@
+Backend
+
+Onde são configuradas as rotas da aplicação
+
+Várias regras de negócio, questões de segurança, cálculos complexos, acesso ao banco de dados, etc
+
+Lib express => configurar rotas
+Exemplo de código simples
+
+const express = require('express')
+
+const app = express()
+
+app.get('/', (request, response) => {
+  return response.json({
+    message : 'Hello World!!!' 
+  })
+})
+
+app.listen(3333)

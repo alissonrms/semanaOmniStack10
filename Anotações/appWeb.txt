@@ -1,0 +1,22 @@
+Anotações App Web
+
+Abordagem tradicional -> Backend é responsável por gerar toda a página, incluindo o conteúdo visual, respondendo a requisição com um arquivo HTML, CSS e JS
+
+Abordagem SPA -> A responsabilidade por gerar todo o código visual é do frontend, sendo o backend responsável somente por enviar dados estruturados (JSON, XML, etc)
+
+SPA -> Single Page Application
+
+React -> Torna possível gerar todo o código da página via JavaScript
+
+JSX -> JavaScript + XML (na prática, JavaScript + HTML e CSS)
+
+
+Conceitos do React:
+
+Componente -> Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
+
+Propiedade -> Informações que um componente pai passa para o componente filho (props)
+
+Estado -> Usado para armezenar Informações pelo componente (ReactHooks. Exemplo: useState)
+
+Imutabilidade -> Nunca alterar dados, sempre criar novos e apagar antigos. Usado para questões de performance

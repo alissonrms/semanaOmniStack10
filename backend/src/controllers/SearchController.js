@@ -5,7 +5,7 @@ module.exports = {
   async index(request, response) {
     const { latitude, longitude, techs } = request.query
 
-    const techsArray = parseStringAsArray(tehs)
+    const techsArray = parseStringAsArray(techs)
 
     const devs = await Dev.find({
       techs: {
@@ -23,8 +23,6 @@ module.exports = {
     })
 
 
-    return response.json({
-      devs
-    })
+    return response.json(devs)
   }
 }
